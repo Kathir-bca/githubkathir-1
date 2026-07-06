@@ -1,0 +1,43 @@
+
+@media (max-width: 1200px) {
+    .video-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+@media (max-width: 900px) {
+    .video-grid {
+        grid-template-columns: repeat(2, 1fr);
+        margin-left: 20px;
+    }
+
+    .sidebar {
+        display: none;
+    }
+}
+@media (max-width: 600px) {
+
+    .video-grid {
+        grid-template-columns: 1fr;
+        margin: 10px;
+    }
+
+    .middle-section {
+        flex: 1;
+    }
+
+    .search {
+        width: 100%;
+    }
+
+    .right-section img:not(.y-user) {
+        display: none;
+    }
+
+    .y-logo {
+        width: 90px;
+    }
+
+    .sidebar {
+        display: none;
+    }
+}
