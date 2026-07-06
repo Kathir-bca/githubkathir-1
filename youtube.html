@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Youtube Clone</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/sidebar.css">
+</head>
+
+<body>
+    <div class="header">
+        <div class="left-section">
+            <img class="h-menu" src="icons/hamburger-menu.svg">
+            <img class="y-logo" src="icons/youtube-logo.svg">
+        </div>
+        <div class="middle-section">
+            <input class="search" type="text" placeholder="Search">
+            <button class="y-search">
+                <img class="search-logo" src="icons/search.svg">
+            </button>
+            <button class="y-voice">
+                <img class="voice-icon" src="icons/voice-search-icon.svg">
+            </button>
+        </div>
+        <div class="right-section">
+            <img class="y-upload" src="icons/upload.svg">
+            <img class="y-app" src="icons/youtube-apps.svg">
+            <div class="y-notification-container">
+                <img class="y-notification" src="icons/notifications.svg">
+                <div class="n-count">3</div>
+            </div>
+            <img class="y-user" src="profile/images.png">
+        </div>
+    </div>
+    <div class="sidebar">
+        <div class="sidebar-link">
+            <img src="icons/home.svg">
+            <div>Home</div>
+        </div>
+        <div class="sidebar-link">
+            <img src="icons/explore.svg">
+            <div>Explore</div>
+        </div>
+        <div class="sidebar-link">
+            <img src="icons/subscriptions.svg">
+            <div>Subscriptions</div>
+        </div>
+        <div class="sidebar-link">
+            <img src="icons/originals.svg">
+            <div>Orginals</div>
+        </div>
+        <div class="sidebar-link">
+            <img src="icons/youtube-music.svg">
+            <div>YouTube Music</div>
+        </div>
+        <div class="sidebar-link">
+            <img src="icons/library.svg">
+            <div>Library</div>
+        </div>
+    </div>
+    <div style="display:grid; grid-template-columns: repeat(4, 1fr); margin-right: 100px;">
+        <div style="display: inline-block;">
+            <div class="video-preview">
+                <div class="thumb-row">
+                    <a href="https://youtu.be/rRrBbyv3ChM?si=_fMWZXT-NwDh9CxN" target="_blank">
+                        <img class="thumb" src="thumnails/thumbnail1.jpg">
+                    </a>
+                    <div class="video-time">14:20</div>
+                </div>
+                <div class="video-bottom">
+                    <div class="profile">
+                        <img class="vid-profile" src="profile/drake.jpg">
+                    </div>
+                    <div class="vid-info">
+                        <p class="vid-tit">
+                            Full Claude Tutorial for Begineers in 2026! (Become a PRO!)
+                        </p>
+                        <p class="vid-author">
+                            AI Foundations
+                        </p>
+                        <p class="views">
+                            900k views &#183; 3 months ago
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div style="display: inline-block;">
+            <div class="video-preview">
+                <div class="thumb-row">
+                    <a href="https://youtu.be/wZeOwqmSw84?si=eWtucM7SBioCuIJ6" target="_blank">
+                        <img class="thumb" src="thumnails/thum2.jpg">
+                    </a>
+                    <div class="video-time">15:13</div>
+                </div>
+                <div class="video-bottom">
+                    <div class="profile">
+                        <img class="vid-profile" src="profile/dan.webp">
+                    </div>
+                    <div class="vid-info">
+                        <p class="vid-tit">
+                            Learn 97% of Claude in Under 16 Minutes
+                        </p>
+                        <p class="vid-author">
+                            Dan Martell
+                        </p>
+                        <p class="views">
+                            450k views &#183; 11 months ago
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div style="display: inline-block;">
+            <div class="video-preview">
+                <div class="thumb-row">
+                    <a href="https://youtu.be/yVcFH-bl3h8?si=JClIlhH0vpg598Yv" target="_blank">
+                        <img class="thumb" src="thumnails/thumb3.jpg">
+                    </a>
+                    <div class="video-time">01:23</div>
+                </div>
+                <div class="video-bottom">
+                    <div class="profile">
+                        <img class="vid-profile" src="profile/kaju.jpg">
+                    </div>
+                    <div class="vid-info">
+                        <p class="vid-tit">
+                            Who is more dangerous in Europe Hitler or Ronaldo
+                        </p>
+                        <p class="vid-author">
+                            KaguDYt
+                        </p>
+                        <p class="views">
+                            78k views &#183; 3 months ago
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div style="display: inline-block;">
+            <div class="video-preview">
+                <div class="thumb-row">
+                    <a href="https://youtu.be/q6z_UCBM5Ek?si=8wcbk7CIQmKZ9lFB" target="_blank">
+                        <img class="thumb" src="thumnails/thumb4.jpg">
+                        <div class="video-time">62:55:08</div>
+                    </a>
+                </div>
+                <div class="video-bottom">
+                    <div class="profile">
+                        <img class="vid-profile" src="profile/telusko.jpg">
+                    </div>
+                    <div class="vid-info">
+                        <p class="vid-tit">
+                            Complete Java Developmenet: Spring Boot,Microservices,Spring AI
+                        </p>
+                        <p class="vid-author">
+                            Telusko
+                        </p>
+                        <p class="views">
+                            987k views &#183; 3 months ago
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div style="display: inline-block;">
+            <div class="video-preview">
+                <div class="thumb-row">
+                    <a href="https://youtu.be/2qCtkwrgTKw?si=vwymi6sLswtfA3PR" target="_blank">
+                        <img class="thumb" src="thumnails/thumb5.jpg">
+                    </a>
+                    <div class="video-time">2:30</div>
+                </div>
+                <div class="video-bottom">
+                    <div class="profile">
+                        <img class="vid-profile" src="profile/kaju.jpg">
+                    </div>
+                    <div class="vid-info">
+                        <p class="vid-tit">
+                            Could The Ottoman Empire Stop Noodle Hair Ronaldo
+                        </p>
+                        <p class="vid-author">
+                            KajuDYt
+                        </p>
+                        <p class="views">
+                            45k views &#183; 4 months ago
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div style="display: inline-block;">
+            <div class="video-preview">
+                <div class="thumb-row">
+                    <a href="https://youtu.be/ef568d0CrRY?si=5HL_VxcnRQUTIYWR" target="_blank">
+                        <img class="thumb" src="thumnails/thumb7.jpg">
+                    </a>
+                    <div class="video-time">2:35:53</div>
+                </div>
+                <div class="video-bottom">
+                    <div class="profile">
+                        <img class="vid-profile" src="profile/sys.jpeg">
+                    </div>
+                    <div class="vid-info">
+                        <p class="vid-tit">
+                            1000 Players Stimulate Civilization: Rich & Poor
+                        </p>
+                        <p class="vid-author">
+                            ish
+                        </p>
+                        <p class="views">
+                            46M views &#183; 11 months ago
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div style="display: inline-block;">
+            <div class="video-preview">
+                <div class="thumb-row">
+                    <a href="https://youtu.be/pQ5xEiZ-5IE?si=YF5eEDbBrP5oyU5x" target="_blank">
+                        <img class="thumb" src="thumnails/thumb8.jpg">
+                    </a>
+                    <div class="video-time">8:16</div>
+                </div>
+                <div class="video-bottom">
+                    <div class="profile">
+                        <img class="vid-profile" src="profile/icc.png">
+                    </div>
+                    <div class="vid-info">
+                        <p class="vid-tit">
+                            Cricket World Cup 2019 Final: England v New Zealand | Match Highlights
+                        </p>
+                        <p class="vid-author">
+                            ICC
+                        </p>
+                        <p class="views">
+                            5.2M views &#183; 6 years ago
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div style="display: inline-block;">
+            <div class="video-preview">
+                <div class="thumb-row">
+                    <a href="https://youtu.be/6Q8clgHW09g?si=5D9ciQOL6ivwm2PF" target="_blank">
+                        <img class="thumb" src="thumnails/thumb6.jpg">
+                    </a>
+                    <div class="video-time">1:03</div>
+                </div>
+                <div class="video-bottom">
+                    <div class="profile">
+                        <img class="vid-profile" src="profile/speed.jpeg">
+                    </div>
+                    <div class="vid-info">
+                        <p class="vid-tit">
+                            WORLD CUP 2026 TOUR(TEASER)
+                        </p>
+                        <p class="vid-author">
+                            IShowSpeed and FIFA
+                        </p>
+                        <p class="views">
+                            2.5M views &#183; 3 weeks ago
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div style="display: inline-block;">
+            <div class="video-preview">
+                <div class="thumb-row">
+                    <a href="https://youtu.be/DPMluEVUqS0?si=BaS4cm8N3egY5qKN" target="_blank">
+                        <img style="height: 168.75px;" class="thumb" src="thumnails/thumb9.jpg">
+                    </a>
+                    <div class="video-time">02:35:53</div>
+                </div>
+                <div class="video-bottom">
+                    <div class="profile">
+                        <img class="vid-profile" src="profile/technoblade.jpeg">
+                    </div>
+                    <div class="vid-info">
+                        <p class="vid-tit">
+                            so long nerds
+                        </p>
+                        <p class="vid-author">
+                            Technoblade
+                        </p>
+                        <p class="views">
+                            128m views &#183; 4 years ago
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div style="display: inline-block;">
+            <div class="video-preview">
+                <div class="thumb-row">
+                    <a href="https://youtu.be/wamtTEVFDiA?si=SYadI_ug70Z44fRp" target="_blank">
+                        <img class="thumb" src="thumnails/thumb10.jpg">
+                    </a>
+                    <div class="video-time">18:37</div>
+                </div>
+                <div class="video-bottom">
+                    <div class="profile">
+                        <img class="vid-profile" src="profile/images (3).jpeg">
+                    </div>
+                    <div class="vid-info">
+                        <p class="vid-tit">
+                            Headingley Final Day HIGHLIGHTS | Incredible Ben Stokes Wins Match | The Ashes Day 4 2019
+                        </p>
+                        <p class="vid-author">
+                            England & Wales Cricket Board
+                        </p>
+                        <p class="views">
+                            24M views &#183; 6 years ago
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div style="display: inline-block;">
+            <div class="video-preview">
+                <div class="thumb-row">
+                    <a href="https://youtu.be/Du-GWB4g7GY?si=5KItluhL5B1eviGJ" target="_blank">
+                        <img class="thumb" src="thumnails/thumb11.png">
+                    </a>
+                    <div class="video-time">44:41</div>
+                </div>
+                <div class="video-bottom">
+                    <div class="profile">
+                        <img class="vid-profile" src="profile/Profile_011.png">
+                    </div>
+                    <div class="vid-info">
+                        <p class="vid-tit">
+                            The Danger of Artificial Intelligence: Hummanity's Last Inavtion? | ENDEVER Documentary
+                        </p>
+                        <p class="vid-author">
+                            ENDEVER
+                        </p>
+                        <p class="views">
+                            245k views &#183; 7 months ago
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div style="display: inline-block;">
+            <div class="video-preview">
+                <div class="thumb-row">
+                    <a href="https://youtu.be/7ARBJQn6QkM?si=9rWJGurLY_D6XEy8" target="_blank">
+                        <img class="thumb" src="thumnails/thumb12.png">
+                    </a>
+                    <div class="video-time">18:37</div>
+                </div>
+                <div class="video-bottom">
+                    <div class="profile">
+                        <img class="vid-profile" src="profile/Profile_4.png">
+                    </div>
+                    <div class="vid-info">
+                        <p class="vid-tit">
+                            Future of the World: Evolution of Future Technoloogies
+                        <p class="vid-author">
+                            Future Business Tech
+                        </p>
+                        <p class="views">
+                            1.2M views &#183; 1 year ago
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div style="display: inline-block;">
+            <div class="video-preview">
+                <div class="thumb-row">
+                    <a href="https://youtu.be/bx48qPlaGvE?si=HZFivU6repO8tFxP"  target="_blank">
+                        <img class="thumb" src="thumnails/thumb18.jpg">
+                    </a>
+                    <div class="video-time">8:12</div>
+                </div>
+                <div class="video-bottom">
+                    <div class="profile">
+                        <img class="vid-profile" src="profile/alex.jpg">
+                    </div>
+                    <div class="vid-info">
+                        <p class="vid-tit">
+                            My Best Sales Tactic (to Make a TON of Money)
+                        </p>
+                        <p class="vid-author">
+                            Alex Hormozi
+                        </p>
+                        <p class="views">
+                            875k views &#183; 3 years ago
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div style="display: inline-block;">
+            <div class="video-preview">
+                <div class="thumb-row">
+                    <a href="https://youtu.be/IQcsbyCW-5w?si=Al6z-vjrQErkcxOy" target="_blank">
+                        <img class="thumb" src="thumnails/thumb17.png">
+                    </a>
+                    <div class="video-time">27:39</div>
+                </div>
+                <div class="video-bottom">
+                    <div class="profile">
+                        <img class="vid-profile" src="profile/Profile_012.png">
+                    </div>
+                    <div class="vid-info">
+                        <p class="vid-tit">
+                            Manali | Manali Tourist Places | Manali Travel Guide | Manali Tour Budget | Kasol | Rohtang
+                            Pass
+                        </p>
+                        <p class="vid-author">
+                            TheSocialTraveller
+                        </p>
+                        <p class="views">
+                            3M views &#183; 3 years ago
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div style="display: inline-block;">
+            <div class="video-preview">
+                <div class="thumb-row">
+                    <a href="https://youtu.be/Jm5Jnws7hj4?si=iAwu3WIuFcCnDeJ1" target="_blank">
+                        <img class="thumb" src="thumnails/thumb13.png">
+                    </a>
+                    <div class="video-time">1:19</div>
+                </div>
+                <div class="video-bottom">
+                    <div class="profile">
+                        <img class="vid-profile" src="profile/Profile_5.png">
+                    </div>
+                    <div class="vid-info">
+                        <p class="vid-tit">
+                            WELCOME TO MY CHHANNEL | JULIUS CEASER
+                        </p>
+                        <p class="vid-author">
+                            Julius Ceaser
+                        </p>
+                        <p class="views">
+                            4.5M views &#183; 12 years ago
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div style="display: inline-block;">
+            <div class="video-preview">
+                <div class="thumb-row">
+                    <a href="https://youtu.be/zHcK78LUejk?si=dziNd02_WTqoHDmF" target="_blank">
+                        <img class="thumb" src="thumnails/thumb14.png">
+                    </a>
+                    <div class="video-time">11:54</div>
+                </div>
+                <div class="video-bottom">
+                    <div class="profile">
+                        <img class="vid-profile" src="profile/Profile_7.png">
+                    </div>
+                    <div class="vid-info">
+                        <p class="vid-tit">
+                            Motorola Edge 60 Fusion Unboxing | Hands-On, Antutu,Design,Unbox and Camera Test
+                        </p>
+                        <p class="vid-author">
+                            Infofull
+                        </p>
+                        <p class="views">
+                            45k views &#183; 7 months ago
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div style="display: inline-block;">
+            <div class="video-preview">
+                <div class="thumb-row">
+                    <a href="https://youtu.be/dQW36hbLLhU?si=Rom4BPgyhd37ifY9" target="_blank">
+                        <img class="thumb" src="thumnails/thumb15.png">
+                    </a>
+                    <div class="video-time">7:01</div>
+                </div>
+                <div class="video-bottom">
+                    <div class="profile">
+                        <img class="vid-profile" src="profile/Profile_9.png">
+                    </div>
+                    <div class="vid-info">
+                        <p class="vid-tit">
+                            The majestic Himlayas | Chronicles of India
+                        </p>
+                        <p class="vid-author">
+                            Chronicles of India
+                        </p>
+                        <p class="views">
+                            250k views &#183; 1 year ago
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div style="display: inline-block;">
+            <div class="video-preview">
+                <div class="thumb-row">
+                    <a href="https://youtu.be/vrY1THC_NQE?si=Sr5-4t2ca21D30Uf" target="_blank">
+                        <img class="thumb" src="thumnails/thumb20.jpg">
+                    </a>
+                    <div class="video-time">4:53</div>
+                </div>
+                <div class="video-bottom">
+                    <div class="profile">
+                        <img class="vid-profile" src="profile/speed.jpeg">
+                    </div>
+                    <div class="vid-info">
+                        <p class="vid-tit">
+                            IShowspeed-World Cup(Champions) [Official Music Video]
+                        </p>
+                        <p class="vid-author">
+                            IShowSpeed
+                        </p>
+                        <p class="views">
+                            80M views &#183; 1 months ago
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div style="display: inline-block;">
+            <div class="video-preview">
+                <div class="thumb-row">
+                    <a href="https://youtu.be/ggkd_uyDqz8?si=cRFrKEk5o1dFJJUX" target="_blank">
+                        <img class="thumb" src="thumnails/thumb19.jpg">
+                    </a>
+                    <div class="video-time">31:24</div>
+                </div>
+                <div class="video-bottom">
+                    <div class="profile">
+                        <img class="vid-profile" src="profile/jared.jpeg">
+                    </div>
+                    <div class="vid-info">
+                        <p class="vid-tit">
+                            Stoicism:An In-Depth Explanation
+                        </p>
+                        <p class="vid-author">
+                            Jared Henderson
+                        </p>
+                        <p class="views">
+                            1.4M views &#183; 2 years ago
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div style="display: inline-block;">
+            <div class="video-preview">
+                <div class="thumb-row">
+                    <a href="https://youtu.be/3Illx0WkCxU?si=ym-cQ9pbWoqHhYtB" target="_blank">
+                        <img class="thumb" src="thumnails/thumb201.jpg">
+                    </a>
+                    <div class="video-time">2:26:38</div>
+                </div>
+                <div class="video-bottom">
+                    <div class="profile">
+                        <img class="vid-profile" src="profile/hofuni.jpeg">
+                    </div>
+                    <div class="vid-info">
+                        <p class="vid-tit">
+                            How Did The Universe Begin?
+                        </p>
+                        <p class="vid-author">
+                            History Of The Universe
+                        </p>
+                        <p class="views">
+                            17M views &#183; 3 years ago
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+</body>
+
+</html>
